@@ -14,7 +14,7 @@ public class HomePage extends PageBase {
 
     public BooksPage clickAvatarIcon(){
         clickWithAction(BookStoreApp,0,700);
-        clickOnElement(BookStoreApp);
+
 
         return new BooksPage(driver);
     }
