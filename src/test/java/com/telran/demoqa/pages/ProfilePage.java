@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ProfilePage extends PageBase {
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -33,4 +35,19 @@ public class ProfilePage extends PageBase {
         return new LoginPage(driver);
     }
 
+    @FindBy(xpath = "//*[@id='delete-record-undefined']")
+    List <WebElement> booklist;
+
+    @FindBy(id = "closeSmallModal-ok")
+    WebElement okBtn;
+
+    public ProfilePage clickOnTrashToDeleteBook() {
+        booklist.get(0).click();
+        pause(500);
+        okBtn.click();
+        pause(500);
+        driver.switchTo().alert().accept();
+
+        return this;
+    }
 }

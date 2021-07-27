@@ -18,6 +18,10 @@ public class LoginPage extends PageBase {
     @FindBy(id = "login")
     WebElement loginBtn;
 
+    @FindBy(id = "newUser")
+    WebElement newUserBtn;
+
+
     public ProfilePage login(String name, String password) {
         type(userName,name);
         type (pswd,password);
@@ -35,6 +39,14 @@ public class LoginPage extends PageBase {
         return this;
     }
 
+    public RegisterPage createNewUser(String name, String password){
+        type(userName,name);
+        type (pswd,password);
+        // clickWithAction(loginBtn,0,300);
+       newUserBtn.click();
+
+        return new RegisterPage(driver);
+    }
 
 
 }

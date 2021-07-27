@@ -10,6 +10,7 @@ public class HomePage extends PageBase {
     }
 
     @FindBy(xpath = "//h5[contains(.,'Book Store Application')]")
+            //xpath = "//div[@class='category-cards']/div[.='Book Store Application']"
     WebElement BookStoreApp;
 
     public BooksPage clickAvatarIcon(){
