@@ -20,6 +20,16 @@ public class HomePage extends PageBase {
         return new BooksPage(driver);
     }
 
+    @FindBy(xpath = "//div[@class='category-cards']/div[.='Alerts, Frame & Windows']")
+    WebElement alertFrameAndWindowIcon;
+
+    public SidePanelPage goToAlertFrameAndWindowIcon(){
+        clickWithAction(alertFrameAndWindowIcon,0,300);
+
+
+        return new SidePanelPage(driver);
+    }
+
     //avatar mx-auto white
     //login
 }

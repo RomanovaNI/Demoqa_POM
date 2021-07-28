@@ -1,0 +1,12 @@
+16:41:30 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - Start search By.xpath: //div[@class='category-cards']/div[.='Alerts, Frame & Windows']
+16:41:30 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - By.xpath: //div[@class='category-cards']/div[.='Alerts, Frame & Windows']found.
+16:41:30 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - Start search By.xpath: //span[.='Browser Windows']
+16:41:30 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - By.xpath: //span[.='Browser Windows']found.
+16:41:31 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - Start search By.id: messageWindowButton
+16:41:31 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - By.id: messageWindowButtonfound.
+16:41:31 [Test worker] INFO  com.telran.demoqa.helpers.MyListener - Start search By.xpath: //body
+16:42:23 [Test worker] ERROR com.telran.demoqa.helpers.MyListener - org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//body
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Saschas-MacBook-Pro.local', ip: 'fe80:0:0:0:818:3b0b:3e2:b4a0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver

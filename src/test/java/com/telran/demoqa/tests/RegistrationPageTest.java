@@ -16,6 +16,9 @@ public class RegistrationPageTest extends TestBase {
 
     @Test
     public void registrationUserTest(){
+        int i= (int) ((System.currentTimeMillis()/1000)%3600);
+        String uName="Nat"+i;
+
         new LoginPage(driver).createNewUser("Nata1", "Natalia123%")
                 .fillRegForm("Nat","Sch","Nata1", "Natalia123%");
     }
